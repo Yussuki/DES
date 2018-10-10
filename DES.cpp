@@ -38,20 +38,15 @@ int main()
     uint64_t msg, chave;
 
     //Recebendo Msg
-    //std::cin >> msg;
+    std::cin >> std::hex >> msg;
 
     //Recebendo Chave
-    //for (int i = 0; i < 6; i++) {
-    //    uint64_t ch;
-        std::cin >> std::hex >> chave;
-    //    chave = (chave << 8) + ch;
-    //}
-    //std::cout << nEsimoBit(chave,msg);
+    std::cin >> std::hex >> chave;
 
     //Permutação Inicial
-    chave=permutaInicial(chave);
+    msg=permutaInicial(msg);
 
-    std::cout << std::hex << chave << '\n';
+    std::cout << std::hex << msg << '\n';
 /*
     //16 Rounds
     for (int i = 0; i < 16; i++) {
