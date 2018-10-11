@@ -5,6 +5,7 @@
 uint32_t rotaciona( uint32_t chave, unsigned nDesl);
 uint64_t nEsimoBit( uint64_t chave, int n);
 uint64_t permutaInicial(uint64_t chave);
+uint64_t bitSwap(uint64_t swap);
 
 int deslocamentos[16] = {
     1,1,1,1,1
@@ -44,7 +45,7 @@ int main()
     std::cin >> std::hex >> chave;
 
     //Permutação Inicial
-    msg=permutaInicial(msg);
+    //msg=permutaInicial(msg);
 
     std::cout << std::hex << msg << '\n';
 /*
@@ -55,6 +56,8 @@ int main()
     }
 */
     //32 - bit swap
+    msg = bitSwap(msg);
+    std::cout << std::hex << msg << '\n';
 
     //Permutação inversa
 
@@ -84,4 +87,9 @@ uint64_t permutaInicial(uint64_t chave)
         nova += nEsimoBit(chave, (pi[i]-1)) << i;
     }
     return  nova;
+}
+
+uint64_t bitSwap(uint64_t swap)
+{
+    return (swap >> 32) + (swap << 32);
 }
