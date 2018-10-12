@@ -21,6 +21,7 @@ uint64_t escPermut2( uint64_t chave);
 uint64_t expE( uint32_t msg);
 uint32_t Sbox(uint64_t msg);
 uint32_t Perm(uint32_t msg);
+uint64_t permutaInicialInversa(uint64_t msg);
 //  Tabelas
 int deslocamentos[16] = { 1,1,2,2,2,2,2,2,1,2,2,2,2,2,2,1 };
 
@@ -204,7 +205,8 @@ int main()
     std::cout << "32-bit Swap: " << std::hex << msg << '\n';
 
     //Permutação inversa
-
+    permutaInicialInversa(msg);
+    std::cout << "Permutacao Inversa: " << std::hex << msg << '\n';
     return 0;
 }
 
@@ -270,4 +272,12 @@ uint32_t Sbox(uint64_t msg){
 
 uint32_t Perm(uint32_t msg){
 
+}
+
+uint64_t permutaInicialInversa(uint64_t msg){
+    uint64_t nova = 0;
+    for (int i = 63; i >= 0; i--) {
+        nova += nEsimoBit(chave, i) << (pi[i]-1);
+    }
+    return nova;
 }
