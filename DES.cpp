@@ -16,7 +16,7 @@ uint32_t rotaciona( uint32_t chave, unsigned nDesl);
 uint64_t nEsimoBit( uint64_t chave, int n);
 uint64_t permutaInicial(uint64_t chave);
 uint64_t bitSwap(uint64_t swap);
-uint64_t EscPerm1( uint64_t chave);
+uint64_t escPerm1( uint64_t chave);
 
 
 //  Tabelas
@@ -33,7 +33,7 @@ unsigned pi[64] = {
     63, 55, 47, 39, 31, 23, 15, 7
 };
 
-const int PC1[56] = {
+unsigned PC1[56] = {
    57, 49, 41, 33, 25, 17,  9,
     1, 58, 50, 42, 34, 26, 18,
    10,  2, 59, 51, 43, 35, 27,
@@ -53,23 +53,25 @@ int main()
 
     //Recebendo Msg
     std::cin >> std::hex >> msg;
-
     //Recebendo Chave
     std::cin >> std::hex >> chave;
-
     std::cout << "Mensagem Original: "<< std::hex << msg << '\n';
     std::cout << "Chave Original: "<< std::hex << chave << '\n';
     std::cout << "====================" << '\n';
 
     //Permutação Inicial (Msg)
     msg=permutaInicial(msg);
-
     std::cout << "Permutacao Inicial: "<< std::hex << msg << '\n';
+    std::cout << "====================" << '\n';
 
     //Escalonamento chave 64 -> 56 bits (PC1)
-    chave = EscPerm1(chave);
-    chaveL= chave >> 28;
-    chaveR= (chave << 64-28) >> 28;
+    chave = escPerm1(chave);
+    chaveL = chave >> 28;
+    chaveR = (chave << 28) >> 28;
+    std::cout << "PC1 - Chave: "<< std::hex << chave << '\n';
+    std::cout << "PC1 - ChaveL: "<< std::hex << chaveL << '\t';
+    std::cout << "PC1 - ChaveR: "<< std::hex << chaveR << '\n';
+    std::cout << "====================" << '\n';
 
 /*
     //16 Rounds
@@ -87,7 +89,8 @@ int main()
     return 0;
 }
 
-uint32_t rotaciona( uint32_t chave, unsigned nDesl){
+uint32_t rotaciona( uint32_t chave, unsigned nDesl)
+{
     for(int i=0; i<nDesl;i++){
         chave = chave << 1;
         chave += (chave >> 28)&1;
@@ -109,10 +112,19 @@ uint64_t permutaInicial(uint64_t chave)
     for (int i = 63; i >= 0; i--) {
         nova += nEsimoBit(chave, (pi[i]-1)) << i;
     }
-    return  nova;
+    return nova;
 }
 
 uint64_t bitSwap(uint64_t swap)
 {
     return (swap >> 32) + (swap << 32);
+}
+
+
+uint64_t escPerm1( uint64_t chave){
+    uint64_t nova = 0;
+    for (int i = 0; i < 56; i++) {
+        nova += nEsimoBit(chave, (PC1[i]-1)) << i;
+    }
+    return nova;
 }
