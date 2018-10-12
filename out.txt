@@ -1,0 +1,5 @@
+Mensagem Original: 10000000bffffffa
+Chave Original: 123456789abcdef
+====================
+Permutacao Inicial: e0f17070f0f0f0f0
+32-bit Swap: f0f0f0f0e0f17070

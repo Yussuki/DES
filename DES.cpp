@@ -1,15 +1,26 @@
+/*
+    Universidade Federal de São Carlos - Campus Sorocaba
+    Implementação DES
+    Disciplina: Instrodução à Criptografia
+    Desenvolvido por:
+        Anderson Pinheiro Garrote   RA 743505
+        Thiago Yussuki Uehara       RA 745???
+*/
 #include <iostream>
 
+//  Mascaras
 #define mask_0000111111111111111111 268435455
 
+//  Funções
 uint32_t rotaciona( uint32_t chave, unsigned nDesl);
 uint64_t nEsimoBit( uint64_t chave, int n);
 uint64_t permutaInicial(uint64_t chave);
 uint64_t bitSwap(uint64_t swap);
+uint64_t EscPerm1( uint64_t chave);
 
-int deslocamentos[16] = {
-    1,1,1,1,1
-};
+
+//  Tabelas
+int deslocamentos[16] = { 1,1,2,2,2,2,2,2,1,2,2,2,2,2,2,1 };
 
 unsigned pi[64] = {
     58, 50, 42, 34, 26, 18, 10, 2,
@@ -33,10 +44,12 @@ const int PC1[56] = {
    21, 13,  5, 28, 20, 12,  4
 };
 
+//  Função Principal
 int main()
 {
 
     uint64_t msg, chave;
+    uint32_t chaveL, chaveR;
 
     //Recebendo Msg
     std::cin >> std::hex >> msg;
@@ -44,10 +57,20 @@ int main()
     //Recebendo Chave
     std::cin >> std::hex >> chave;
 
-    //Permutação Inicial
-    //msg=permutaInicial(msg);
+    std::cout << "Mensagem Original: "<< std::hex << msg << '\n';
+    std::cout << "Chave Original: "<< std::hex << chave << '\n';
+    std::cout << "====================" << '\n';
 
-    std::cout << std::hex << msg << '\n';
+    //Permutação Inicial (Msg)
+    msg=permutaInicial(msg);
+
+    std::cout << "Permutacao Inicial: "<< std::hex << msg << '\n';
+
+    //Escalonamento chave 64 -> 56 bits (PC1)
+    chave = EscPerm1(chave);
+    chaveL= chave >> 28;
+    chaveR= (chave << 64-28) >> 28;
+
 /*
     //16 Rounds
     for (int i = 0; i < 16; i++) {
@@ -57,7 +80,7 @@ int main()
 */
     //32 - bit swap
     msg = bitSwap(msg);
-    std::cout << std::hex << msg << '\n';
+    std::cout << "32-bit Swap: " << std::hex << msg << '\n';
 
     //Permutação inversa
 
