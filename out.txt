@@ -1,121 +1,216 @@
 Mensagem Original: 696e74726f647563
 Chave Original: 3132333435363738
-====================
+===========================
 Permutacao Inicial: ff4c76d100ff139a
-====================
+===========================
 PC1 - Chave: fff667880f
-PC1 - ChaveL: fff	PC1 - ChaveR: 667880f
-====================
+===========================
 [ROUND 1]
 Chave:
-	Desloc:1ffeccf101e
-	PC2:502cac572ac2
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: 1ffeccf101e
+	PC2: 502cac572ac2
+Mensagem:
+	Orig: ff4c76d100ff139a
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND 2]
 Chave:
-	Desloc:3ffc99e203d
-	PC2:50aca450a347
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: 3ffc99e203d
+	PC2: 50aca450a347
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND 3]
 Chave:
-	Desloc:fff067880f6
-	PC2:d0ac26f6848c
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: fff067880f6
+	PC2: d0ac26f6848c
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND 4]
 Chave:
-	Desloc:3ffc09e203d9
-	PC2:e0a6264837cb
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: 3ffc09e203d9
+	PC2: e0a6264837cb
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND 5]
 Chave:
-	Desloc:fff007880f66
-	PC2:e096263ef029
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: fff007880f66
+	PC2: e096263ef029
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND 6]
 Chave:
-	Desloc:3ffc00e203d99
-	PC2:e09272625d62
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: 3ffc00e203d99
+	PC2: e09272625d62
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND 7]
 Chave:
-	Desloc:fff000880f667
-	PC2:a4d2728ca93a
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: fff000880f667
+	PC2: a4d2728ca93a
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND 8]
 Chave:
-	Desloc:3ffc000203d99e
-	PC2:a65352e55e50
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: 3ffc000203d99e
+	PC2: a65352e55e50
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND 9]
 Chave:
-	Desloc:7ff8000407b33c
-	PC2:265353cb9a40
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: 7ff8000407b33c
+	PC2: 265353cb9a40
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND a]
 Chave:
-	Desloc:ffe000101eccf1
-	PC2:2f5151d0c73c
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: ffe000101eccf1
+	PC2: 2f5151d0c73c
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND b]
 Chave:
-	Desloc:ff8000707b33c4
-	PC2:f41d9191e8c
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: ff8000707b33c4
+	PC2: f41d9191e8c
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND c]
 Chave:
-	Desloc:fe0001f1eccf10
-	PC2:1f4199d870b1
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: fe0001f1eccf10
+	PC2: 1f4199d870b1
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND d]
 Chave:
-	Desloc:f80007f7b33c40
-	PC2:1f0989236a2d
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: f80007f7b33c40
+	PC2: 1f0989236a2d
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND e]
 Chave:
-	Desloc:e0001ffeccf101
-	PC2:1b288db23992
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: e0001ffeccf101
+	PC2: 1b288db23992
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND f]
 Chave:
-	Desloc:80007ffb33c407
-	PC2:192c8ca50337
-
-Msg Orig:ff4c76d100ff139a
-====================
+	Desloc: 80007ffb33c407
+	PC2: 192c8ca50337
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
 [ROUND 10]
 Chave:
-	Desloc:fff667880f
-	PC2:512c8ca743c0
-
-Msg Orig:ff4c76d100ff139a
-====================
-32-bit Swap: ff139aff4c76d1
+	Desloc: fff667880f
+	PC2: 512c8ca743c0
+Mensagem:
+	Orig: 17fe8a7cf4
+	Expan: 17fe8a7cf4
+	Add Key: 17fe8a7cf4
+	S-Box: 17fe8a7cf4
+	Permuta: 17fe8a7cf4
+	Add Left: 17fe8a7cf4
+	Final: 17fe8a7cf4
+===========================
+32-bit Swap: fe8a7cf400000017

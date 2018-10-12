@@ -18,6 +18,7 @@ uint64_t permutaInicial(uint64_t chave);
 uint64_t bitSwap(uint64_t swap);
 uint64_t escPermut1( uint64_t chave);
 uint64_t escPermut2( uint64_t chave);
+uint64_t expE( uint32_t msg);
 
 //  Tabelas
 int deslocamentos[16] = { 1,1,2,2,2,2,2,2,1,2,2,2,2,2,2,1 };
@@ -53,12 +54,23 @@ unsigned PC2[48]={
     34, 53, 46, 42, 50, 36, 29, 32
 };
 
+unsigned E[48]={
+    32, 1, 2, 3, 4, 5,
+    4, 5, 6, 7, 8, 9,
+    8, 9, 10, 11, 12, 13,
+    12, 13, 14, 15, 16, 17,
+    16, 17, 18, 19, 20, 21,
+    20, 21, 22, 23, 24, 25,
+    24, 25, 26, 27, 28, 29,
+    28, 29, 30, 31, 32, 1
+};
+
 //  Função Principal
 int main()
 {
 
     uint64_t msg, chave;
-    uint32_t chaveL, chaveR;
+    uint32_t msgL, msgR, chaveL, chaveR;
 
     //Recebendo Msg
     std::cin >> std::hex >> msg;
@@ -66,21 +78,26 @@ int main()
     std::cin >> std::hex >> chave;
     std::cout << "Mensagem Original: "<< std::hex << msg << '\n';
     std::cout << "Chave Original: "<< std::hex << chave << '\n';
-    std::cout << "====================" << '\n';
+    std::cout << "===========================" << '\n';
 
     //Permutação Inicial (Msg)
     msg=permutaInicial(msg);
+    //Divisão em 2 blocos 32 bits
+    msgL = msg >> 32;
+    msgR = (msg << 64-32) >> 64-32;
     std::cout << "Permutacao Inicial: "<< std::hex << msg << '\n';
-    std::cout << "====================" << '\n';
+    std::cout << "===========================" << '\n';
 
     //Escalonamento chave 64 -> 56 bits (PC1)
     chave = escPermut1(chave);
+    //Divisão em 2 blocos 28 bits
     chaveL = chave >> 28;
     chaveR = (chave << 64-28) >> 64-28;
     std::cout << "PC1 - Chave: "<< std::hex << chave << '\n';
-    std::cout << "PC1 - ChaveL: "<< std::hex << chaveL << '\t';
-    std::cout << "PC1 - ChaveR: "<< std::hex << chaveR << '\n';
-    std::cout << "====================" << '\n';
+    //std::cout << "PC1 - ChaveL: "<< std::hex << chaveL << '\t';
+    //std::cout << "PC1 - ChaveR: "<< std::hex << chaveR << '\n';
+    std::cout << "===========================" << '\n';
+
 
 
     //16 Rounds
@@ -94,16 +111,30 @@ int main()
         chaveL = rotaciona(chaveL,deslocamentos[i]);
         chaveR = rotaciona(chaveR,deslocamentos[i]);
         chave = ((uint64_t)chaveL << 28) + chaveR;
-        std::cout << "\t" << "Desloc:" << chave << '\n';
+        std::cout << "\t" << "Desloc: " << chave << '\n';
         //Escolha Permutada 2
         chave=escPermut2(chave);
-        std::cout << "\t" << "PC2:" << chave << '\n';
-        std::cout << '\n';
+        std::cout << "\t" << "PC2: " << chave << '\n';
 
+        //Chave do ROUND
+        std::cout << "Mensagem:\n";
+        std::cout << "\t" << "Orig: " << msg << '\n';
 
-        std::cout << "Msg Orig:" << msg << '\n';
+        //Expansão E
+        msg=expE(msgR);
+        std::cout << "\t" << "Expan: " << msg << '\n';
+        
+        std::cout << "\t" << "Add Key: " << msg << '\n';
 
-        std::cout << "====================" << '\n';
+        std::cout << "\t" << "S-Box: " << msg << '\n';
+
+        std::cout << "\t" << "Permuta: " << msg << '\n';
+
+        std::cout << "\t" << "Add Left: " << msg << '\n';
+
+        std::cout << "\t" << "Final: " << msg << '\n';
+
+        std::cout << "===========================" << '\n';
     }
 
     //32 - bit swap
@@ -159,6 +190,14 @@ uint64_t escPermut2( uint64_t chave){
     uint64_t nova = 0;
     for (int i = 47; i >= 0; i--) {
         nova += nEsimoBit(chave, (56-PC2[i])) << 47-i;
+    }
+    return nova;
+}
+
+uint64_t expE( uint32_t msg){
+    uint64_t nova = 0;
+    for (int i = 47; i >= 0; i--) {
+        nova += nEsimoBit(msg, (32-E[i])) << 47-i;
     }
     return nova;
 }
