@@ -13,10 +13,10 @@
 
 //  Funções
 uint32_t rotaciona( uint32_t chave, unsigned nDesl);
-uint64_t nEsimoBit( uint64_t chave, int n);
+uint64_t nEsimoBit( uint64_t v, int n);
 uint64_t permutaInicial(uint64_t chave);
 uint64_t bitSwap(uint64_t swap);
-uint64_t escPerm1( uint64_t chave);
+uint64_t escPermut1( uint64_t chave);
 
 
 //  Tabelas
@@ -65,16 +65,16 @@ int main()
     std::cout << "====================" << '\n';
 
     //Escalonamento chave 64 -> 56 bits (PC1)
-    chave = escPerm1(chave);
+    chave = escPermut1(chave);
     chaveL = chave >> 28;
-    chaveR = (chave << 28) >> 28;
+    chaveR = (chave << 64-28) >> 64-28;
     std::cout << "PC1 - Chave: "<< std::hex << chave << '\n';
     std::cout << "PC1 - ChaveL: "<< std::hex << chaveL << '\t';
     std::cout << "PC1 - ChaveR: "<< std::hex << chaveR << '\n';
     std::cout << "====================" << '\n';
 
 /*
-    //16 Rounds
+    //16 Roundschave = escPerm1(chave);
     for (int i = 0; i < 16; i++) {
         chave = rotaciona(chave,deslocamentos[i]);
         std::cout << chave << '\t';
@@ -101,9 +101,9 @@ uint32_t rotaciona( uint32_t chave, unsigned nDesl)
 
 }
 
-uint64_t nEsimoBit( uint64_t chave, int n)
+uint64_t nEsimoBit( uint64_t v, int n)
 {
-    return (chave >> (n)) & 1;
+    return (v >> (n)) & 1;
 }
 
 uint64_t permutaInicial(uint64_t chave)
@@ -121,10 +121,11 @@ uint64_t bitSwap(uint64_t swap)
 }
 
 
-uint64_t escPerm1( uint64_t chave){
+uint64_t escPermut1( uint64_t chave){
     uint64_t nova = 0;
-    for (int i = 0; i < 56; i++) {
-        nova += nEsimoBit(chave, (PC1[i]-1)) << i;
+    for (int i = 55; i >= 0; i--) {
+        //std::cout << PC1[i] << " > " << nEsimoBit(chave, (PC1[i]-1)) << '\n';
+        nova += nEsimoBit(chave, (64-PC1[i])) << 55-i;
     }
     return nova;
 }

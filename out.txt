@@ -3,7 +3,7 @@ Chave Original: 3132333435363738
 ====================
 Permutacao Inicial: ff4c76d100ff139a
 ====================
-PC1 - Chave: 8ffff000786655
-PC1 - ChaveL: 8ffff00	PC1 - ChaveR: 786655
+PC1 - Chave: fff667880f
+PC1 - ChaveL: fff	PC1 - ChaveR: 667880f
 ====================
 32-bit Swap: ff139aff4c76d1
