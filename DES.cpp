@@ -17,7 +17,7 @@ uint64_t nEsimoBit( uint64_t v, int n);
 uint64_t permutaInicial(uint64_t chave);
 uint64_t bitSwap(uint64_t swap);
 uint64_t escPermut1( uint64_t chave);
-
+uint64_t escPermut2( uint64_t chave);
 
 //  Tabelas
 int deslocamentos[16] = { 1,1,2,2,2,2,2,2,1,2,2,2,2,2,2,1 };
@@ -42,6 +42,15 @@ unsigned PC1[56] = {
     7, 62, 54, 46, 38, 30, 22,
    14,  6, 61, 53, 45, 37, 29,
    21, 13,  5, 28, 20, 12,  4
+};
+
+unsigned PC2[48]={
+    14, 17, 11, 24, 1, 5, 3, 28,
+    15, 6, 21, 10, 23, 19, 12, 4,
+    26, 8, 16, 7, 27, 20, 13, 2,
+    41, 52, 31, 37, 47, 55, 30, 40,
+    51, 45, 33, 48, 44, 49, 39, 56,
+    34, 53, 46, 42, 50, 36, 29, 32
 };
 
 //  Função Principal
@@ -73,13 +82,30 @@ int main()
     std::cout << "PC1 - ChaveR: "<< std::hex << chaveR << '\n';
     std::cout << "====================" << '\n';
 
-/*
-    //16 Roundschave = escPerm1(chave);
+
+    //16 Rounds
     for (int i = 0; i < 16; i++) {
-        chave = rotaciona(chave,deslocamentos[i]);
-        std::cout << chave << '\t';
+        //Inicio
+        std::cout << "[ROUND " << i+1 <<"]" << '\n';
+
+        //Chave do ROUND
+        std::cout << "Chave:\n";
+        //Deslocamento
+        chaveL = rotaciona(chaveL,deslocamentos[i]);
+        chaveR = rotaciona(chaveR,deslocamentos[i]);
+        chave = ((uint64_t)chaveL << 28) + chaveR;
+        std::cout << "\t" << "Desloc:" << chave << '\n';
+        //Escolha Permutada 2
+        chave=escPermut2(chave);
+        std::cout << "\t" << "PC2:" << chave << '\n';
+        std::cout << '\n';
+
+
+        std::cout << "Msg Orig:" << msg << '\n';
+
+        std::cout << "====================" << '\n';
     }
-*/
+
     //32 - bit swap
     msg = bitSwap(msg);
     std::cout << "32-bit Swap: " << std::hex << msg << '\n';
@@ -124,8 +150,15 @@ uint64_t bitSwap(uint64_t swap)
 uint64_t escPermut1( uint64_t chave){
     uint64_t nova = 0;
     for (int i = 55; i >= 0; i--) {
-        //std::cout << PC1[i] << " > " << nEsimoBit(chave, (PC1[i]-1)) << '\n';
         nova += nEsimoBit(chave, (64-PC1[i])) << 55-i;
+    }
+    return nova;
+}
+
+uint64_t escPermut2( uint64_t chave){
+    uint64_t nova = 0;
+    for (int i = 47; i >= 0; i--) {
+        nova += nEsimoBit(chave, (56-PC2[i])) << 47-i;
     }
     return nova;
 }
