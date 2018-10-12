@@ -19,7 +19,8 @@ uint64_t bitSwap(uint64_t swap);
 uint64_t escPermut1( uint64_t chave);
 uint64_t escPermut2( uint64_t chave);
 uint64_t expE( uint32_t msg);
-
+uint32_t Sbox(uint64_t msg);
+uint32_t Perm(uint32_t msg);
 //  Tabelas
 int deslocamentos[16] = { 1,1,2,2,2,2,2,2,1,2,2,2,2,2,2,1 };
 
@@ -123,15 +124,20 @@ int main()
         //Expansão E
         msg=expE(msgR);
         std::cout << "\t" << "Expan: " << msg << '\n';
-        
+        //Adição XOR
+        msg=msg^chave;
         std::cout << "\t" << "Add Key: " << msg << '\n';
-
+        //S-box
+        uint32_t msgAux=Sbox(msg);
         std::cout << "\t" << "S-Box: " << msg << '\n';
-
+        //Permutação
+        msgAux=Perm(msgAux);
         std::cout << "\t" << "Permuta: " << msg << '\n';
-
+        //Adição msgL
+        msgL=msgL^msgAux;
         std::cout << "\t" << "Add Left: " << msg << '\n';
-
+        //Atribuição msgR em msgL
+        msgL=msgR;
         std::cout << "\t" << "Final: " << msg << '\n';
 
         std::cout << "===========================" << '\n';
@@ -200,4 +206,12 @@ uint64_t expE( uint32_t msg){
         nova += nEsimoBit(msg, (32-E[i])) << 47-i;
     }
     return nova;
+}
+
+uint32_t Sbox(uint64_t msg){
+
+}
+
+uint32_t Perm(uint32_t msg){
+
 }

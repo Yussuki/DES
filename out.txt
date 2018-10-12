@@ -12,205 +12,205 @@ Chave:
 Mensagem:
 	Orig: ff4c76d100ff139a
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: 503b52dd5636
+	S-Box: 503b52dd5636
+	Permuta: 503b52dd5636
+	Add Left: 503b52dd5636
+	Final: 503b52dd5636
 ===========================
 [ROUND 2]
 Chave:
 	Desloc: 3ffc99e203d
 	PC2: 50aca450a347
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: 503b52dd5636
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: 50bb5adadfb3
+	S-Box: 50bb5adadfb3
+	Permuta: 50bb5adadfb3
+	Add Left: 50bb5adadfb3
+	Final: 50bb5adadfb3
 ===========================
 [ROUND 3]
 Chave:
 	Desloc: fff067880f6
 	PC2: d0ac26f6848c
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: 50bb5adadfb3
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: d0bbd87cf878
+	S-Box: d0bbd87cf878
+	Permuta: d0bbd87cf878
+	Add Left: d0bbd87cf878
+	Final: d0bbd87cf878
 ===========================
 [ROUND 4]
 Chave:
 	Desloc: 3ffc09e203d9
 	PC2: e0a6264837cb
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: d0bbd87cf878
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: e0b1d8c24b3f
+	S-Box: e0b1d8c24b3f
+	Permuta: e0b1d8c24b3f
+	Add Left: e0b1d8c24b3f
+	Final: e0b1d8c24b3f
 ===========================
 [ROUND 5]
 Chave:
 	Desloc: fff007880f66
 	PC2: e096263ef029
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: e0b1d8c24b3f
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: e081d8b48cdd
+	S-Box: e081d8b48cdd
+	Permuta: e081d8b48cdd
+	Add Left: e081d8b48cdd
+	Final: e081d8b48cdd
 ===========================
 [ROUND 6]
 Chave:
 	Desloc: 3ffc00e203d99
 	PC2: e09272625d62
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: e081d8b48cdd
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: e0858ce82196
+	S-Box: e0858ce82196
+	Permuta: e0858ce82196
+	Add Left: e0858ce82196
+	Final: e0858ce82196
 ===========================
 [ROUND 7]
 Chave:
 	Desloc: fff000880f667
 	PC2: a4d2728ca93a
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: e0858ce82196
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: a4c58c06d5ce
+	S-Box: a4c58c06d5ce
+	Permuta: a4c58c06d5ce
+	Add Left: a4c58c06d5ce
+	Final: a4c58c06d5ce
 ===========================
 [ROUND 8]
 Chave:
 	Desloc: 3ffc000203d99e
 	PC2: a65352e55e50
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: a4c58c06d5ce
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: a644ac6f22a4
+	S-Box: a644ac6f22a4
+	Permuta: a644ac6f22a4
+	Add Left: a644ac6f22a4
+	Final: a644ac6f22a4
 ===========================
 [ROUND 9]
 Chave:
 	Desloc: 7ff8000407b33c
 	PC2: 265353cb9a40
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: a644ac6f22a4
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: 2644ad41e6b4
+	S-Box: 2644ad41e6b4
+	Permuta: 2644ad41e6b4
+	Add Left: 2644ad41e6b4
+	Final: 2644ad41e6b4
 ===========================
 [ROUND a]
 Chave:
 	Desloc: ffe000101eccf1
 	PC2: 2f5151d0c73c
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: 2644ad41e6b4
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: 2f46af5abbc8
+	S-Box: 2f46af5abbc8
+	Permuta: 2f46af5abbc8
+	Add Left: 2f46af5abbc8
+	Final: 2f46af5abbc8
 ===========================
 [ROUND b]
 Chave:
 	Desloc: ff8000707b33c4
 	PC2: f41d9191e8c
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: 2f46af5abbc8
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: f5627936278
+	S-Box: f5627936278
+	Permuta: f5627936278
+	Add Left: f5627936278
+	Final: f5627936278
 ===========================
 [ROUND c]
 Chave:
 	Desloc: fe0001f1eccf10
 	PC2: 1f4199d870b1
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: f5627936278
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: 1f5667520c45
+	S-Box: 1f5667520c45
+	Permuta: 1f5667520c45
+	Add Left: 1f5667520c45
+	Final: 1f5667520c45
 ===========================
 [ROUND d]
 Chave:
 	Desloc: f80007f7b33c40
 	PC2: 1f0989236a2d
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: 1f5667520c45
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: 1f1e77a916d9
+	S-Box: 1f1e77a916d9
+	Permuta: 1f1e77a916d9
+	Add Left: 1f1e77a916d9
+	Final: 1f1e77a916d9
 ===========================
 [ROUND e]
 Chave:
 	Desloc: e0001ffeccf101
 	PC2: 1b288db23992
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: 1f1e77a916d9
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: 1b3f73384566
+	S-Box: 1b3f73384566
+	Permuta: 1b3f73384566
+	Add Left: 1b3f73384566
+	Final: 1b3f73384566
 ===========================
 [ROUND f]
 Chave:
 	Desloc: 80007ffb33c407
 	PC2: 192c8ca50337
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: 1b3f73384566
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: 193b722f7fc3
+	S-Box: 193b722f7fc3
+	Permuta: 193b722f7fc3
+	Add Left: 193b722f7fc3
+	Final: 193b722f7fc3
 ===========================
 [ROUND 10]
 Chave:
 	Desloc: fff667880f
 	PC2: 512c8ca743c0
 Mensagem:
-	Orig: 17fe8a7cf4
+	Orig: 193b722f7fc3
 	Expan: 17fe8a7cf4
-	Add Key: 17fe8a7cf4
-	S-Box: 17fe8a7cf4
-	Permuta: 17fe8a7cf4
-	Add Left: 17fe8a7cf4
-	Final: 17fe8a7cf4
+	Add Key: 513b722d3f34
+	S-Box: 513b722d3f34
+	Permuta: 513b722d3f34
+	Add Left: 513b722d3f34
+	Final: 513b722d3f34
 ===========================
-32-bit Swap: fe8a7cf400000017
+32-bit Swap: 722d3f340000513b
