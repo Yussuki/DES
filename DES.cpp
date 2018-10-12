@@ -129,6 +129,8 @@ int main()
 
     uint64_t msg, chave;
     uint32_t msgL, msgR, chaveL, chaveR;
+    //INICIO
+    std::cout << "[INICIO]"<<'\n';
 
     //Recebendo Msg
     std::cin >> std::hex >> msg;
@@ -161,7 +163,10 @@ int main()
     //16 Rounds
     for (int i = 0; i < 16; i++) {
         //Inicio
-        std::cout << "[ROUND " << i+1 <<"]" << '\n';
+        std::cout << "[ROUND " << std::dec << i+1 <<"]" << '\n';
+
+        //Converter saída para hexa
+        std::cout << std::hex;
 
         //Chave do ROUND
         std::cout << "Chave:\n";
@@ -200,12 +205,15 @@ int main()
         std::cout << "===========================" << '\n';
     }
 
+    //FINAL
+    std::cout << "[FINAL]"<<'\n';
+
     //32 - bit swap
     msg = bitSwap(msg);
     std::cout << "32-bit Swap: " << std::hex << msg << '\n';
 
     //Permutação inversa
-    permutaInicialInversa(msg);
+    msg=permutaInicialInversa(msg);
     std::cout << "Permutacao Inversa: " << std::hex << msg << '\n';
     return 0;
 }
@@ -277,7 +285,7 @@ uint32_t Perm(uint32_t msg){
 uint64_t permutaInicialInversa(uint64_t msg){
     uint64_t nova = 0;
     for (int i = 63; i >= 0; i--) {
-        nova += nEsimoBit(chave, i) << (pi[i]-1);
+        nova += nEsimoBit(msg, i) << (pi[i]-1);
     }
     return nova;
 }

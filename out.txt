@@ -1,3 +1,4 @@
+[INICIO]
 Mensagem Original: 696e74726f647563
 Chave Original: 3132333435363738
 ===========================
@@ -122,7 +123,7 @@ Mensagem:
 	Add Left: 2644ad41e6b4
 	Final: 2644ad41e6b4
 ===========================
-[ROUND a]
+[ROUND 10]
 Chave:
 	Desloc: ffe000101eccf1
 	PC2: 2f5151d0c73c
@@ -135,7 +136,7 @@ Mensagem:
 	Add Left: 2f46af5abbc8
 	Final: 2f46af5abbc8
 ===========================
-[ROUND b]
+[ROUND 11]
 Chave:
 	Desloc: ff8000707b33c4
 	PC2: f41d9191e8c
@@ -148,7 +149,7 @@ Mensagem:
 	Add Left: f5627936278
 	Final: f5627936278
 ===========================
-[ROUND c]
+[ROUND 12]
 Chave:
 	Desloc: fe0001f1eccf10
 	PC2: 1f4199d870b1
@@ -161,7 +162,7 @@ Mensagem:
 	Add Left: 1f5667520c45
 	Final: 1f5667520c45
 ===========================
-[ROUND d]
+[ROUND 13]
 Chave:
 	Desloc: f80007f7b33c40
 	PC2: 1f0989236a2d
@@ -174,7 +175,7 @@ Mensagem:
 	Add Left: 1f1e77a916d9
 	Final: 1f1e77a916d9
 ===========================
-[ROUND e]
+[ROUND 14]
 Chave:
 	Desloc: e0001ffeccf101
 	PC2: 1b288db23992
@@ -187,7 +188,7 @@ Mensagem:
 	Add Left: 1b3f73384566
 	Final: 1b3f73384566
 ===========================
-[ROUND f]
+[ROUND 15]
 Chave:
 	Desloc: 80007ffb33c407
 	PC2: 192c8ca50337
@@ -200,7 +201,7 @@ Mensagem:
 	Add Left: 193b722f7fc3
 	Final: 193b722f7fc3
 ===========================
-[ROUND 10]
+[ROUND 16]
 Chave:
 	Desloc: fff667880f
 	PC2: 512c8ca743c0
@@ -213,4 +214,6 @@ Mensagem:
 	Add Left: 513b722d3f34
 	Final: 513b722d3f34
 ===========================
+[FINAL]
 32-bit Swap: 722d3f340000513b
+Permutacao Inversa: 1e4615164f574800
