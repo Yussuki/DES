@@ -15,7 +15,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: 503b52dd5636
 	S-Box: 503b52dd5636
-	Permuta: 503b52dd5636
+	Permuta: e627956a
 	Add Left: 503b52dd5636
 	Final: 503b52dd5636
 ===========================
@@ -28,7 +28,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: 50bb5adadfb3
 	S-Box: 50bb5adadfb3
-	Permuta: 50bb5adadfb3
+	Permuta: 776fad4b
 	Add Left: 50bb5adadfb3
 	Final: 50bb5adadfb3
 ===========================
@@ -41,7 +41,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: d0bbd87cf878
 	S-Box: d0bbd87cf878
-	Permuta: d0bbd87cf878
+	Permuta: 3f9d94c6
 	Add Left: d0bbd87cf878
 	Final: d0bbd87cf878
 ===========================
@@ -54,7 +54,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: e0b1d8c24b3f
 	S-Box: e0b1d8c24b3f
-	Permuta: e0b1d8c24b3f
+	Permuta: 1aefad22
 	Add Left: e0b1d8c24b3f
 	Final: e0b1d8c24b3f
 ===========================
@@ -67,7 +67,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: e081d8b48cdd
 	S-Box: e081d8b48cdd
-	Permuta: e081d8b48cdd
+	Permuta: 1f98992f
 	Add Left: e081d8b48cdd
 	Final: e081d8b48cdd
 ===========================
@@ -80,7 +80,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: e0858ce82196
 	S-Box: e0858ce82196
-	Permuta: e0858ce82196
+	Permuta: 28b21f5
 	Add Left: e0858ce82196
 	Final: e0858ce82196
 ===========================
@@ -93,7 +93,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: a4c58c06d5ce
 	S-Box: a4c58c06d5ce
-	Permuta: a4c58c06d5ce
+	Permuta: 29de3039
 	Add Left: a4c58c06d5ce
 	Final: a4c58c06d5ce
 ===========================
@@ -106,7 +106,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: a644ac6f22a4
 	S-Box: a644ac6f22a4
-	Permuta: a644ac6f22a4
+	Permuta: 80e916f5
 	Add Left: a644ac6f22a4
 	Final: a644ac6f22a4
 ===========================
@@ -119,7 +119,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: 2644ad41e6b4
 	S-Box: 2644ad41e6b4
-	Permuta: 2644ad41e6b4
+	Permuta: 83ad46b9
 	Add Left: 2644ad41e6b4
 	Final: 2644ad41e6b4
 ===========================
@@ -132,7 +132,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: 2f46af5abbc8
 	S-Box: 2f46af5abbc8
-	Permuta: 2f46af5abbc8
+	Permuta: 7df962d1
 	Add Left: 2f46af5abbc8
 	Final: 2f46af5abbc8
 ===========================
@@ -145,7 +145,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: f5627936278
 	S-Box: f5627936278
-	Permuta: f5627936278
+	Permuta: ce744790
 	Add Left: f5627936278
 	Final: f5627936278
 ===========================
@@ -158,7 +158,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: 1f5667520c45
 	S-Box: 1f5667520c45
-	Permuta: 1f5667520c45
+	Permuta: 5451ca38
 	Add Left: 1f5667520c45
 	Final: 1f5667520c45
 ===========================
@@ -171,7 +171,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: 1f1e77a916d9
 	S-Box: 1f1e77a916d9
-	Permuta: 1f1e77a916d9
+	Permuta: ea30cb5f
 	Add Left: 1f1e77a916d9
 	Final: 1f1e77a916d9
 ===========================
@@ -184,7 +184,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: 1b3f73384566
 	S-Box: 1b3f73384566
-	Permuta: 1b3f73384566
+	Permuta: 4416e66e
 	Add Left: 1b3f73384566
 	Final: 1b3f73384566
 ===========================
@@ -197,7 +197,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: 193b722f7fc3
 	S-Box: 193b722f7fc3
-	Permuta: 193b722f7fc3
+	Permuta: f076bacf
 	Add Left: 193b722f7fc3
 	Final: 193b722f7fc3
 ===========================
@@ -210,7 +210,7 @@ Mensagem:
 	Expan: 17fe8a7cf4
 	Add Key: 513b722d3f34
 	S-Box: 513b722d3f34
-	Permuta: 513b722d3f34
+	Permuta: f220b6ee
 	Add Left: 513b722d3f34
 	Final: 513b722d3f34
 ===========================
