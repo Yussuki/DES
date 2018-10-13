@@ -67,56 +67,35 @@ unsigned E[48]={
     28, 29, 30, 31, 32, 1
 };
 
-unsigned S1[64] = {
+unsigned S[64][8] = {
     14, 4, 13, 1, 2, 15, 11, 8, 3, 10, 6, 12, 5, 9, 0, 7,
     0, 15, 7, 4, 14, 2, 13, 1, 10, 6, 12, 11, 9, 5, 3, 8,
     4, 1, 14, 8, 13, 6, 2, 11, 15, 12, 9, 7, 3, 10, 5, 0,
-    15, 12, 8, 2, 4, 9, 1, 7, 5, 11, 3, 14, 10, 0, 6, 13
-};
-
-unsigned S2[64] = {
+    15, 12, 8, 2, 4, 9, 1, 7, 5, 11, 3, 14, 10, 0, 6, 13,
     15, 1, 8, 14, 6, 11, 3, 4, 9, 7, 2, 13, 12, 0, 5, 10,
     3, 13, 4, 7, 15, 2, 8, 14, 12, 0, 1, 10, 6, 9, 11, 5,
     0, 14, 7, 11, 10, 4, 13, 1, 5, 8, 12, 6, 9, 3, 2, 15,
-    13, 8, 10, 1, 3, 15, 4, 2, 11, 6, 7, 12, 0, 5, 14, 9
-};
-
-unsigned S3[64] = {
+    13, 8, 10, 1, 3, 15, 4, 2, 11, 6, 7, 12, 0, 5, 14, 9,
     10, 0, 9, 14, 6, 3, 15, 5, 1, 13, 12, 7, 11, 4, 2, 8,
     13, 7, 0, 9, 3, 4, 6, 10, 2, 8, 5, 14, 12, 11, 15, 1,
     13, 6, 4, 9, 8, 15, 3, 0, 11, 1, 2, 12, 5, 10, 14, 7,
-    1, 10, 13, 0, 6, 9, 8, 7, 4, 15, 14, 3, 11, 5, 2, 12
-};
-
-unsigned S4[64] = {
+    1, 10, 13, 0, 6, 9, 8, 7, 4, 15, 14, 3, 11, 5, 2, 12,
     7, 13, 14, 3, 0, 6, 9, 10, 1, 2, 8, 5, 11, 12, 4, 15,
     13, 8, 11, 5, 6, 15, 0, 3, 4, 7, 2, 12, 1, 10, 14, 9,
     10, 6, 9, 0, 12, 11, 7, 13, 15, 1, 3, 14, 5, 2, 8, 4,
-    3, 15, 0, 6, 10, 1, 13, 8, 9, 4, 5, 11, 12, 7, 2, 14
-};
-
-unsigned S5[64] = {
+    3, 15, 0, 6, 10, 1, 13, 8, 9, 4, 5, 11, 12, 7, 2, 14,
     2, 12, 4, 1, 7, 10, 11, 6, 8, 5, 3, 15, 13, 0, 14, 9,
    14, 11, 2, 12, 4, 7, 13, 1, 5, 0, 15, 10, 3, 9, 8, 6,
     4, 2, 1, 11, 10, 13, 7, 8, 15, 9, 12, 5, 6, 3, 0, 14,
-    11, 8, 12, 7, 1, 14, 2, 13, 6, 15, 0, 9, 10, 4, 5, 3
-};
-
-unsigned S6[64] = {
+    11, 8, 12, 7, 1, 14, 2, 13, 6, 15, 0, 9, 10, 4, 5, 3,
     12, 1, 10, 15, 9, 2, 6, 8, 0, 13, 3, 4, 14, 7, 5, 11,
     10, 15, 4, 2, 7, 12, 9, 5, 6, 1, 13, 14, 0, 11, 3, 8,
     9, 14, 15, 5, 2, 8, 12, 3, 7, 0, 4, 10, 1, 13, 11, 6,
-    4, 3, 2, 12, 9, 5, 15, 10, 11, 14, 1, 7, 6, 0, 8, 13
-};
-
-unsigned S7[64] = {
+    4, 3, 2, 12, 9, 5, 15, 10, 11, 14, 1, 7, 6, 0, 8, 13,
     4, 11, 2, 14, 15, 0, 8, 13, 3, 12, 9, 7, 5, 10, 6, 1,
     13, 0, 11, 7, 4, 9, 1, 10, 14, 3, 5, 12, 2, 15, 8, 6,
     1, 4, 11, 13, 12, 3, 7, 14, 10, 15, 6, 8, 0, 5, 9, 2,
-    6, 11, 13, 8, 1, 4, 10, 7, 9, 5, 0, 15, 14, 2, 3, 12
-};
-
-unsigned S8[64] = {
+    6, 11, 13, 8, 1, 4, 10, 7, 9, 5, 0, 15, 14, 2, 3, 12,
     13, 2, 8, 4, 6, 15, 11, 1, 10, 9, 3, 14, 5, 0, 12, 7,
     1, 15, 13, 8, 10, 3, 7, 4, 12, 5, 6, 11, 0, 14, 9, 2,
     7, 11, 4, 1, 9, 12, 14, 2, 0, 6, 10, 13, 15, 3, 5, 8,
@@ -174,33 +153,33 @@ int main()
         chaveL = rotaciona(chaveL,deslocamentos[i]);
         chaveR = rotaciona(chaveR,deslocamentos[i]);
         chave = ((uint64_t)chaveL << 28) + chaveR;
-        std::cout << "\t" << "Desloc: " << chave << '\n';
+        std::cout << "\t" << "Desloc:\t " << chave << '\n';
         //Escolha Permutada 2
         chave=escPermut2(chave);
-        std::cout << "\t" << "PC2: " << chave << '\n';
+        std::cout << "\t" << "PC2:\t " << chave << '\n';
 
         //Chave do ROUND
         std::cout << "Mensagem:\n";
-        std::cout << "\t" << "Orig: " << msg << '\n';
+        std::cout << "\t" << "Orig:\t\t " << msg << '\n';
 
         //Expansão E
         msg=expE(msgR);
-        std::cout << "\t" << "Expan: " << msg << '\n';
+        std::cout << "\t" << "Expan:\t\t " << msg << '\n';
         //Adição XOR
         msg=msg^chave;
-        std::cout << "\t" << "Add Key: " << msg << '\n';
+        std::cout << "\t" << "Add Key:\t " << msg << '\n';
         //S-box
         uint32_t msgAux=Sbox(msg);
-        std::cout << "\t" << "S-Box: " << msg << '\n';
+        std::cout << "\t" << "S-Box:\t\t " << msgAux << '\n';
         //Permutação
         msgAux=Perm(msgAux);
-        std::cout << "\t" << "Permuta: " << msg << '\n';
+        std::cout << "\t" << "Permuta:\t " << msg << '\n';
         //Adição msgL
         msgL=msgL^msgAux;
-        std::cout << "\t" << "Add Left: " << msg << '\n';
+        std::cout << "\t" << "Add Left:\t " << msg << '\n';
         //Atribuição msgR em msgL
         msgL=msgR;
-        std::cout << "\t" << "Final: " << msg << '\n';
+        std::cout << "\t" << "Final:\t\t " << msg << '\n';
 
         std::cout << "===========================" << '\n';
     }
@@ -210,11 +189,11 @@ int main()
 
     //32 - bit swap
     msg = bitSwap(msg);
-    std::cout << "32-bit Swap: " << std::hex << msg << '\n';
+    std::cout << "32-bit Swap:\t " << std::hex << msg << '\n';
 
     //Permutação inversa
     msg=permutaInicialInversa(msg);
-    std::cout << "Permutacao Inversa: " << std::hex << msg << '\n';
+    std::cout << "Permutacao Inversa:\t " << std::hex << msg << '\n';
     return 0;
 }
 
@@ -276,6 +255,27 @@ uint64_t expE( uint32_t msg){
 
 uint32_t Sbox(uint64_t msg){
 
+
+    //std::cout << "\t" << "Antes:\t\t " << msg <<  '\n';
+    int auxiliar;
+    uint32_t nova = 0;
+    std::cout << "\tAntes: " << msg << "\n";
+    for(int i = 0; i < 8; i++)
+    {
+        uint64_t linha = 0, coluna = 0;
+        
+        //pegando primeiro e ultimo bit dos 6 bits e definindo a linha da sBox
+        linha = (nEsimoBit(msg, (48 - i*6)) << 1) + nEsimoBit(msg, (48 - (i*6 + 5)));
+        
+        //pegando os 4 do meio e definindo a coluna
+        coluna = (nEsimoBit(msg, (48 - (i*6 + 2))) << 3) + (nEsimoBit(msg, (48 - (i*6 + 3))) << 2) + (nEsimoBit(msg, (48 - (i*6 + 4))) << 1) + nEsimoBit(msg, (48 - (i*6 + 5)));
+        
+        nova += ((S[linha*16 + coluna][i]) << (28 - 4*i));
+        std::cout << "Linha: " << linha << "\n";
+        std::cout << "Coluna: " << coluna << "\tbin:" << nEsimoBit(msg, (48 - (i*6 + 2))) << nEsimoBit(msg, (48 - (i*6 + 3))) << nEsimoBit(msg, (48 - (i*6 + 4))) << nEsimoBit(msg, (48 - (i*6 + 5))) << "\n";
+        std::cout << "S-Box[" << i <<  "] = " << ((S[linha*16 + coluna][i]) << (28 - 4*i)) << "\n"; 
+    }
+    return nova;
 }
 
 uint32_t Perm(uint32_t msg){
