@@ -1,36 +1,8 @@
 [INICIO]
-	Antes: 88215723529782
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 2
-Coluna: 11
-S-Box[7] = 13
-Linha: 0
-Coluna: 12
-S-Box[6] = 80
-Linha: 1
-Coluna: 10
-S-Box[5] = 3328
-Linha: 3
-Coluna: 11
-S-Box[4] = 36864
-Linha: 0
-Coluna: 9
-S-Box[3] = 131072
-Linha: 3
-Coluna: 6
-S-Box[2] = 8388608
-Linha: 1
-Coluna: 1
-S-Box[1] = 218103808
-Linha: 0
-Coluna: 10
-S-Box[0] = 1610612736
-Mensagem Original: 6d829d5d
+Mensagem Original: 696e74726f647563
 Chave Original: 3132333435363738
 ===========================
-Permutacao Inicial: 90c0d0d06010d020
+Permutacao Inicial: ff4c76d100ff139a
 ===========================
 PC1 - Chave: fff667880f
 ===========================
@@ -39,657 +11,209 @@ Chave:
 	Desloc:	 1ffeccf101e
 	PC2:	 502cac572ac2
 Mensagem:
-	Orig:		 90c0d0d06010d020
-	Expan:		 3000a16a0100
-	Add Key:	 602c0d3d2bc2
-	Antes: 602c0d3d2bc2
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 0
-Coluna: 1
-S-Box[7] = 2
-Linha: 3
-Coluna: 7
-S-Box[6] = 70
-Linha: 0
-Coluna: 9
-S-Box[5] = d00
-Linha: 1
-Coluna: 7
-S-Box[4] = 1000
-Linha: 1
-Coluna: 6
-S-Box[3] = 0
-Linha: 2
-Coluna: 8
-S-Box[2] = b00000
-Linha: 0
-Coluna: 1
-S-Box[1] = 1000000
-Linha: 0
-Coluna: c
-S-Box[0] = 50000000
-	S-Box:		 51b01d72
-	Permuta: 3612e50e
-	Add Left:	 602c0d3d2bc2
-	Final:		 602c0d3d2bc2
+	Orig:		 ff4c76d100ff139a
+	Expan:		 17fe8a7cf4
+	Add Key:	 503b52dd5636
+	S-Box:		 6d829d5d
+	Permuta: 3b58eb38
+	Add Left:	 c4149de9
+	Final:		 ff139ac4149de9
 ===========================
 [ROUND 2]
 Chave:
 	Desloc:	 3ffc99e203d
 	PC2:	 50aca450a347
 Mensagem:
-	Orig:		 602c0d3d2bc2
-	Expan:		 3000a16a0100
-	Add Key:	 60ac053aa247
-	Antes: 60ac053aa247
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 1
-Coluna: 3
-S-Box[7] = 8
-Linha: 1
-Coluna: 4
-S-Box[6] = 40
-Linha: 2
-Coluna: 5
-S-Box[5] = 800
-Linha: 0
-Coluna: 7
-S-Box[4] = 6000
-Linha: 1
-Coluna: 2
-S-Box[3] = b0000
-Linha: 2
-Coluna: 8
-S-Box[2] = b00000
-Linha: 0
-Coluna: 5
-S-Box[1] = b000000
-Linha: 0
-Coluna: c
-S-Box[0] = 50000000
-	S-Box:		 5bbb6848
-	Permuta: dc5cc1c6
-	Add Left:	 60ac053aa247
-	Final:		 60ac053aa247
+	Orig:		 ff139ac4149de9
+	Expan:		 e080a94fbf53
+	Add Key:	 b02c0d1f1c14
+	S-Box:		 21b0cba3
+	Permuta: 15266f05
+	Add Left:	 15d97c9f
+	Final:		 c4149de915d97c9f
 ===========================
 [ROUND 3]
 Chave:
 	Desloc:	 fff067880f6
 	PC2:	 d0ac26f6848c
 Mensagem:
-	Orig:		 60ac053aa247
-	Expan:		 3000a16a0100
-	Add Key:	 e0ac879c858c
-	Antes: e0ac879c858c
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 0
-Coluna: 6
-S-Box[7] = b
-Linha: 0
-Coluna: b
-S-Box[6] = 70
-Linha: 0
-Coluna: 4
-S-Box[5] = 900
-Linha: 3
-Coluna: 3
-S-Box[4] = 7000
-Linha: 1
-Coluna: 3
-S-Box[3] = 50000
-Linha: 2
-Coluna: 9
-S-Box[2] = 100000
-Linha: 0
-Coluna: 5
-S-Box[1] = b000000
-Linha: 2
-Coluna: c
-S-Box[0] = 30000000
-	S-Box:		 3b15797b
-	Permuta: fe1e7e82
-	Add Left:	 e0ac879c858c
-	Final:		 e0ac879c858c
+	Orig:		 c4149de915d97c9f
+	Expan:		 8abef2bf94fe
+	Add Key:	 5a12d4491072
+	S-Box:		 cd4856d6
+	Permuta: 22bfc079
+	Add Left:	 e6ab5d90
+	Final:		 15d97c9fe6ab5d90
 ===========================
 [ROUND 4]
 Chave:
 	Desloc:	 3ffc09e203d9
 	PC2:	 e0a6264837cb
 Mensagem:
-	Orig:		 e0ac879c858c
-	Expan:		 3000a16a0100
-	Add Key:	 d0a6872236cb
-	Antes: d0a6872236cb
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 1
-Coluna: 5
-S-Box[7] = 3
-Linha: 1
-Coluna: d
-S-Box[6] = f0
-Linha: 3
-Coluna: 1
-S-Box[5] = 300
-Linha: 0
-Coluna: 4
-S-Box[4] = 7000
-Linha: 1
-Coluna: 3
-S-Box[3] = 50000
-Linha: 0
-Coluna: d
-S-Box[2] = 400000
-Linha: 0
-Coluna: 5
-S-Box[1] = b000000
-Linha: 2
-Coluna: a
-S-Box[0] = 90000000
-	S-Box:		 9b4573f3
-	Permuta: e2bf7c83
-	Add Left:	 d0a6872236cb
-	Final:		 d0a6872236cb
+	Orig:		 15d97c9fe6ab5d90
+	Expan:		 70d556afbca1
+	Add Key:	 907370e78b6a
+	S-Box:		 e76fa1ac
+	Permuta: c9c1f6f5
+	Add Left:	 dc188a6a
+	Final:		 e6ab5d90dc188a6a
 ===========================
 [ROUND 5]
 Chave:
 	Desloc:	 fff007880f66
 	PC2:	 e096263ef029
 Mensagem:
-	Orig:		 d0a6872236cb
-	Expan:		 3000a16a0100
-	Add Key:	 d0968754f129
-	Antes: d0968754f129
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 3
-Coluna: 4
-S-Box[7] = 4
-Linha: 0
-Coluna: 2
-S-Box[6] = 20
-Linha: 1
-Coluna: 7
-S-Box[5] = 500
-Linha: 1
-Coluna: a
-S-Box[4] = f000
-Linha: 1
-Coluna: 3
-S-Box[3] = 50000
-Linha: 0
-Coluna: d
-S-Box[2] = 400000
-Linha: 1
-Coluna: 4
-S-Box[1] = f000000
-Linha: 2
-Coluna: a
-S-Box[0] = 90000000
-	S-Box:		 9f45f524
-	Permuta: e18d74ba
-	Add Left:	 d0968754f129
-	Final:		 d0968754f129
+	Orig:		 e6ab5d90dc188a6a
+	Expan:		 6f80f1454355
+	Add Key:	 8f16d77bb37c
+	S-Box:		 cbbc9015
+	Permuta: 6788d964
+	Add Left:	 812384f4
+	Final:		 dc188a6a812384f4
 ===========================
 [ROUND 6]
 Chave:
 	Desloc:	 3ffc00e203d99
 	PC2:	 e09272625d62
 Mensagem:
-	Orig:		 d0968754f129
-	Expan:		 3000a16a0100
-	Add Key:	 d092d3085c62
-	Antes: d092d3085c62
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 2
-Coluna: 1
-S-Box[7] = b
-Linha: 3
-Coluna: 8
-S-Box[6] = 90
-Linha: 1
-Coluna: 2
-S-Box[5] = 400
-Linha: 0
-Coluna: 1
-S-Box[4] = c000
-Linha: 1
-Coluna: 9
-S-Box[3] = 70000
-Linha: 1
-Coluna: 5
-S-Box[2] = 400000
-Linha: 1
-Coluna: 4
-S-Box[1] = f000000
-Linha: 2
-Coluna: a
-S-Box[0] = 90000000
-	S-Box:		 9f47c49b
-	Permuta: cbcf581b
-	Add Left:	 d092d3085c62
-	Final:		 d092d3085c62
+	Orig:		 dc188a6a812384f4
+	Expan:		 402907c097a9
+	Add Key:	 a0bb75a2cacb
+	S-Box:		 d285ac43
+	Permuta: d192998a
+	Add Left:	 d8a13e0
+	Final:		 812384f40d8a13e0
 ===========================
 [ROUND 7]
 Chave:
 	Desloc:	 fff000880f667
 	PC2:	 a4d2728ca93a
 Mensagem:
-	Orig:		 d092d3085c62
-	Expan:		 3000a16a0100
-	Add Key:	 94d2d3e6a83a
-	Antes: 94d2d3e6a83a
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 2
-Coluna: d
-S-Box[7] = 3
-Linha: 2
-Coluna: 0
-S-Box[6] = 10
-Linha: 2
-Coluna: 5
-S-Box[5] = 800
-Linha: 3
-Coluna: c
-S-Box[4] = a000
-Linha: 1
-Coluna: 9
-S-Box[3] = 70000
-Linha: 1
-Coluna: 5
-S-Box[2] = 400000
-Linha: 1
-Coluna: 6
-S-Box[1] = 8000000
-Linha: 3
-Coluna: 2
-S-Box[0] = 80000000
-	S-Box:		 8847a813
-	Permuta: 93cb1880
-	Add Left:	 94d2d3e6a83a
-	Final:		 94d2d3e6a83a
+	Orig:		 812384f40d8a13e0
+	Expan:		 5bc540a7f00
+	Add Key:	 a16e2686d63a
+	S-Box:		 dd50bf53
+	Permuta: 37bbe89a
+	Add Left:	 b6986c6e
+	Final:		 d8a13e0b6986c6e
 ===========================
 [ROUND 8]
 Chave:
 	Desloc:	 3ffc000203d99e
 	PC2:	 a65352e55e50
 Mensagem:
-	Orig:		 94d2d3e6a83a
-	Expan:		 3000a16a0100
-	Add Key:	 9653f38f5f50
-	Antes: 9653f38f5f50
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 0
-Coluna: 8
-S-Box[7] = a
-Linha: 3
-Coluna: e
-S-Box[6] = 30
-Linha: 3
-Coluna: a
-S-Box[5] = 100
-Linha: 3
-Coluna: 1
-S-Box[4] = 8000
-Linha: 3
-Coluna: 9
-S-Box[3] = 40000
-Linha: 1
-Coluna: 7
-S-Box[2] = a00000
-Linha: 3
-Coluna: 2
-S-Box[1] = a000000
-Linha: 3
-Coluna: 2
-S-Box[0] = 80000000
-	S-Box:		 8aa4813a
-	Permuta: 4b8a3504
-	Add Left:	 9653f38f5f50
-	Final:		 9653f38f5f50
+	Orig:		 d8a13e0b6986c6e
+	Expan:		 5ad4f035835d
+	Add Key:	 fc87a2d0dd0d
+	S-Box:		 d686c967
+	Permuta: 51d6bd32
+	Add Left:	 5c5caed2
+	Final:		 b6986c6e5c5caed2
 ===========================
 [ROUND 9]
 Chave:
 	Desloc:	 7ff8000407b33c
 	PC2:	 265353cb9a40
 Mensagem:
-	Orig:		 9653f38f5f50
-	Expan:		 3000a16a0100
-	Add Key:	 1653f2a19b40
-	Antes: 1653f2a19b40
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 0
-Coluna: 0
-S-Box[7] = d
-Linha: 3
-Coluna: 6
-S-Box[6] = a0
-Linha: 1
-Coluna: c
-S-Box[5] = 0
-Linha: 2
-Coluna: 4
-S-Box[4] = a000
-Linha: 2
-Coluna: 9
-S-Box[3] = 10000
-Linha: 1
-Coluna: 7
-S-Box[2] = a00000
-Linha: 3
-Coluna: 2
-S-Box[1] = a000000
-Linha: 1
-Coluna: 2
-S-Box[0] = 70000000
-	S-Box:		 7aa1a0ad
-	Permuta: c9088fa7
-	Add Left:	 1653f2a19b40
-	Final:		 1653f2a19b40
+	Orig:		 b6986c6e5c5caed2
+	Expan:		 2f82f955d6a4
+	Add Key:	 9d1aa9e4ce4
+	S-Box:		 4beb7f54
+	Permuta: f27de1ec
+	Add Left:	 44e58d82
+	Final:		 5c5caed244e58d82
 ===========================
 [ROUND 10]
 Chave:
 	Desloc:	 ffe000101eccf1
 	PC2:	 2f5151d0c73c
 Mensagem:
-	Orig:		 1653f2a19b40
-	Expan:		 3000a16a0100
-	Add Key:	 1f51f0bac63c
-	Antes: 1f51f0bac63c
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 2
-Coluna: e
-S-Box[7] = 5
-Linha: 0
-Coluna: c
-S-Box[6] = 50
-Linha: 2
-Coluna: 6
-S-Box[5] = c00
-Linha: 2
-Coluna: 7
-S-Box[4] = 8000
-Linha: 2
-Coluna: 8
-S-Box[3] = f0000
-Linha: 1
-Coluna: 3
-S-Box[2] = 900000
-Linha: 3
-Coluna: a
-S-Box[1] = 7000000
-Linha: 1
-Coluna: 3
-S-Box[0] = 40000000
-	S-Box:		 479f8c55
-	Permuta: d750d978
-	Add Left:	 1f51f0bac63c
-	Final:		 1f51f0bac63c
+	Orig:		 5c5caed244e58d82
+	Expan:		 20970bc5bc04
+	Add Key:	 fc65a157b38
+	S-Box:		 f2cc2e7f
+	Permuta: 5ab39fea
+	Add Left:	 6ef3138
+	Final:		 44e58d8206ef3138
 ===========================
 [ROUND 11]
 Chave:
 	Desloc:	 ff8000707b33c4
 	PC2:	 f41d9191e8c
 Mensagem:
-	Orig:		 1f51f0bac63c
-	Expan:		 3000a16a0100
-	Add Key:	 3f4178731f8c
-	Antes: 3f4178731f8c
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 0
-Coluna: 6
-S-Box[7] = b
-Linha: 2
-Coluna: f
-S-Box[6] = 20
-Linha: 3
-Coluna: 8
-S-Box[5] = b00
-Linha: 0
-Coluna: e
-S-Box[4] = e000
-Linha: 2
-Coluna: c
-S-Box[3] = 50000
-Linha: 1
-Coluna: 2
-S-Box[2] = 0
-Linha: 2
-Coluna: a
-S-Box[1] = c000000
-Linha: 1
-Coluna: 7
-S-Box[0] = 10000000
-	S-Box:		 1c05eb2b
-	Permuta: 992e3c92
-	Add Left:	 3f4178731f8c
-	Final:		 3f4178731f8c
+	Orig:		 44e58d8206ef3138
+	Expan:		 d75e9a29f0
+	Add Key:	 f968783377c
+	S-Box:		 f0454e85
+	Permuta: 90a59a2b
+	Add Left:	 d44017a9
+	Final:		 6ef3138d44017a9
 ===========================
 [ROUND 12]
 Chave:
 	Desloc:	 fe0001f1eccf10
 	PC2:	 1f4199d870b1
 Mensagem:
-	Orig:		 3f4178731f8c
-	Expan:		 3000a16a0100
-	Add Key:	 2f4138b271b1
-	Antes: 2f4138b271b1
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 3
-Coluna: 8
-S-Box[7] = f
-Linha: 0
-Coluna: 3
-S-Box[6] = e0
-Linha: 3
-Coluna: 3
-S-Box[5] = c00
-Linha: 2
-Coluna: 6
-S-Box[4] = 7000
-Linha: 2
-Coluna: c
-S-Box[3] = 50000
-Linha: 0
-Coluna: 2
-S-Box[2] = 900000
-Linha: 2
-Coluna: a
-S-Box[1] = c000000
-Linha: 1
-Coluna: 5
-S-Box[0] = 20000000
-	S-Box:		 2c957cef
-	Permuta: bc1e1fb9
-	Add Left:	 2f4138b271b1
-	Final:		 2f4138b271b1
+	Orig:		 6ef3138d44017a9
+	Expan:		 ea82000afd53
+	Add Key:	 f5c399d28de2
+	S-Box:		 6551c2fb
+	Permuta: 8f37ce11
+	Add Left:	 89d8ff29
+	Final:		 d44017a989d8ff29
 ===========================
 [ROUND 13]
 Chave:
 	Desloc:	 f80007f7b33c40
 	PC2:	 1f0989236a2d
 Mensagem:
-	Orig:		 2f4138b271b1
-	Expan:		 3000a16a0100
-	Add Key:	 2f0928496b2d
-	Antes: 2f0928496b2d
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 3
-Coluna: 6
-S-Box[7] = 8
-Linha: 2
-Coluna: 6
-S-Box[6] = 70
-Linha: 0
-Coluna: b
-S-Box[5] = 400
-Linha: 0
-Coluna: 9
-S-Box[4] = 5000
-Linha: 2
-Coluna: 4
-S-Box[3] = c0000
-Linha: 2
-Coluna: 2
-S-Box[2] = 400000
-Linha: 2
-Coluna: 8
-S-Box[1] = 5000000
-Linha: 1
-Coluna: 5
-S-Box[0] = 20000000
-	S-Box:		 254c5478
-	Permuta: 2a155658
-	Add Left:	 2f0928496b2d
-	Final:		 2f0928496b2d
+	Orig:		 d44017a989d8ff29
+	Expan:		 c53ef17fe953
+	Add Key:	 da37785c837e
+	S-Box:		 78f5a918
+	Permuta: 9f09b386
+	Add Left:	 4b49a42f
+	Final:		 89d8ff294b49a42f
 ===========================
 [ROUND 14]
 Chave:
 	Desloc:	 e0001ffeccf101
 	PC2:	 1b288db23992
 Mensagem:
-	Orig:		 2f0928496b2d
-	Expan:		 3000a16a0100
-	Add Key:	 2b282cd83892
-	Antes: 2b282cd83892
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 0
-Coluna: 9
-S-Box[7] = 9
-Linha: 2
-Coluna: 1
-S-Box[6] = 40
-Linha: 1
-Coluna: 1
-S-Box[5] = f00
-Linha: 2
-Coluna: b
-S-Box[4] = 5000
-Linha: 2
-Coluna: 6
-S-Box[3] = 70000
-Linha: 2
-Coluna: 0
-S-Box[2] = d00000
-Linha: 2
-Coluna: 9
-S-Box[1] = 8000000
-Linha: 0
-Coluna: 5
-S-Box[0] = f0000000
-	S-Box:		 f8d75f49
-	Permuta: bcfdbb0a
-	Add Left:	 2b282cd83892
-	Final:		 2b282cd83892
+	Orig:		 89d8ff294b49a42f
+	Expan:		 a56a53d0815e
+	Add Key:	 be42de62b8cc
+	S-Box:		 774fd5bb
+	Permuta: eb47fe5b
+	Add Left:	 629f0172
+	Final:		 4b49a42f629f0172
 ===========================
 [ROUND 15]
 Chave:
 	Desloc:	 80007ffb33c407
 	PC2:	 192c8ca50337
 Mensagem:
-	Orig:		 2b282cd83892
-	Expan:		 3000a16a0100
-	Add Key:	 292c2dcf0237
-	Antes: 292c2dcf0237
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 3
-Coluna: b
-S-Box[7] = 0
-Linha: 0
-Coluna: 4
-S-Box[6] = f0
-Linha: 2
-Coluna: 8
-S-Box[5] = 700
-Linha: 3
-Coluna: 9
-S-Box[4] = f000
-Linha: 3
-Coluna: 6
-S-Box[3] = d0000
-Linha: 2
-Coluna: 8
-S-Box[2] = b00000
-Linha: 0
-Coluna: 9
-S-Box[1] = 7000000
-Linha: 0
-Coluna: 5
-S-Box[0] = f0000000
-	S-Box:		 f7bdf7f0
-	Permuta: e7b4f7df
-	Add Left:	 292c2dcf0237
-	Final:		 292c2dcf0237
+	Orig:		 4b49a42f629f0172
+	Expan:		 3054fe802ba4
+	Add Key:	 297872252893
+	S-Box:		 fa114d45
+	Permuta: d49caa2a
+	Add Left:	 9fd50e05
+	Final:		 629f01729fd50e05
 ===========================
 [ROUND 16]
 Chave:
 	Desloc:	 fff667880f
 	PC2:	 512c8ca743c0
 Mensagem:
-	Orig:		 292c2dcf0237
-	Expan:		 3000a16a0100
-	Add Key:	 612c2dcd42c0
-	Antes: 612c2dcd42c0
-Linha: 0
-Coluna: 0
-S-Box[8] = 0
-Linha: 0
-Coluna: 0
-S-Box[7] = d
-Linha: 1
-Coluna: 5
-S-Box[6] = 90
-Linha: 0
-Coluna: a
-S-Box[5] = 300
-Linha: 3
-Coluna: 9
-S-Box[4] = f000
-Linha: 3
-Coluna: 6
-S-Box[3] = d0000
-Linha: 2
-Coluna: 8
-S-Box[2] = b00000
-Linha: 0
-Coluna: 9
-S-Box[1] = 7000000
-Linha: 0
-Coluna: c
-S-Box[0] = 50000000
-	S-Box:		 57bdf39d
-	Permuta: ef24f9f7
-	Add Left:	 612c2dcd42c0
-	Final:		 612c2dcd42c0
+	Orig:		 629f01729fd50e05
+	Expan:		 cffeaa85c00b
+	Add Key:	 9ed2262283cb
+	S-Box:		 246072a3
+	Permuta: 20270e95
+	Add Left:	 42b80fe7
+	Final:		 9fd50e0542b80fe7
 ===========================
 [FINAL]
-32-bit Swap:	 2dcd42c00000612c
-Permutacao Inversa:	 58045252004a1d11
+32-bit Swap:	 42b80fe79fd50e05
+Permutacao Inversa:	 a7cdaf9cb01161b1

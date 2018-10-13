@@ -129,7 +129,6 @@ int main()
     std::cin >> std::hex >> msg;
     //Recebendo Chave
     std::cin >> std::hex >> chave;
-    msg=Sbox(msg);
     std::cout << "Mensagem Original: "<< std::hex << msg << '\n';
     std::cout << "Chave Original: "<< std::hex << chave << '\n';
     std::cout << "===========================" << '\n';
@@ -148,8 +147,6 @@ int main()
     chaveL = chave >> 28;
     chaveR = (chave << 64-28) >> 64-28;
     std::cout << "PC1 - Chave: "<< std::hex << chave << '\n';
-    //std::cout << "PC1 - ChaveL: "<< std::hex << chaveL << '\t';
-    //std::cout << "PC1 - ChaveR: "<< std::hex << chaveR << '\n';
     std::cout << "===========================" << '\n';
 
 
@@ -190,10 +187,14 @@ int main()
         msgAux=Perm(msgAux);
         std::cout << "\t" << "Permuta: " << msgAux << '\n';
         //Adição msgL
-        msgL=msgL^msgAux;
-        std::cout << "\t" << "Add Left:\t " << msg << '\n';
+        msgAux=msgL^msgAux;
+        std::cout << "\t" << "Add Left:\t " << msgAux << '\n';
         //Atribuição msgR em msgL
-        msgL=msgR;
+        msgL = msgR;
+        msgR = msgAux;
+        //Recontrução da msg
+        msg = msgL;
+        msg = (msg << 32) + msgR;
         std::cout << "\t" << "Final:\t\t " << msg << '\n';
 
         std::cout << "===========================" << '\n';
@@ -274,7 +275,7 @@ uint32_t Sbox(uint64_t msg){
     //std::cout << "\t" << "Antes:\t\t " << msg <<  '\n';
     int auxiliar;
     uint32_t nova = 0;
-    std::cout << "\tAntes: " << msg << "\n";
+    //std::cout << "\tAntes: " << msg << "\n";
     for(int i = 8; i >= 0; i--)
     {
         uint64_t linha = 0, coluna = 0;
@@ -286,9 +287,9 @@ uint32_t Sbox(uint64_t msg){
         coluna = (nEsimoBit(msg, (47 - (i*6 + 1))) << 3) + (nEsimoBit(msg, (47 - (i*6 + 2))) << 2) + (nEsimoBit(msg, (47 - (i*6 + 3))) << 1) + nEsimoBit(msg, (47 - (i*6 + 4)));
         //std::cout << "S[" << linha*16 + coluna << "]" << '\n';
         nova += ((S[i][linha*16 + coluna]) << (28 - 4*i));
-        std::cout << "Linha: " << linha << "\n";
-        std::cout << "Coluna: " << coluna << "\n";
-        std::cout << "S-Box[" << i <<  "] = " << ((S[i][linha*16 + coluna]) << (28 - 4*i)) << "\n";
+    //    std::cout << "Linha: " << linha << "\n";
+    //    std::cout << "Coluna: " << coluna << "\n";
+    //    std::cout << "S-Box[" << i <<  "] = " << ((S[i][linha*16 + coluna]) << (28 - 4*i)) << "\n";
     }
     return nova;
 }
