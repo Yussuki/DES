@@ -128,23 +128,23 @@ int main()
 
     //Recebendo Msg
     std::cin >> std::hex >> msg;
-    std::cout << "Mensagem Original:  "<< std::hex << msg << '\n';
+    std::cout << "Mensagem Original:  "<<  std::uppercase << std::hex << msg << '\n';
     //Permutação Inicial (Msg)
     msg=permutaInicial(msg);
     //Divisão em 2 blocos 32 bits
     msgL = msg >> 32;
     msgR = (msg << 64-32) >> 64-32;
-    std::cout << "Permutacao Inicial: "<< std::hex << msg << '\n';
+    std::cout << "Permutacao Inicial: "<< std::uppercase << std::hex << msg << '\n';
 
     //Recebendo Chave
     std::cin >> std::hex >> chave;
-    std::cout << "Chave Original:\t\t"<< std::hex << chave << '\n';
+    std::cout << "Chave Original:\t\t"<< std::uppercase << std::hex << chave << '\n';
     //Escalonamento chave 64 -> 56 bits (PC1)
     chave = escPermut1(chave);
     //Divisão em 2 blocos 28 bits
     chaveL = chave >> 28;
     chaveR = (chave << 64-28) >> 64-28;
-    std::cout << "PC1:\t\t\t\t"<< std::hex << chave << '\n';
+    std::cout << "PC1:\t\t\t\t"<< std::uppercase << std::hex << chave << '\n';
     std::cout << "===========================" << '\n';
 
     //16 Rounds
@@ -153,7 +153,7 @@ int main()
         std::cout << "\t\t [ROUND " << std::dec << i+1 <<"]" << '\n';
 
         //Converter saída para hexa
-        std::cout << std::hex;
+        std::cout << std::uppercase << std::hex;
 
         //Chave do ROUND
         std::cout << "> Chave:\n";
@@ -201,11 +201,11 @@ int main()
 
     //32 - bit swap
     msg = bitSwap(msg);
-    std::cout << "32-bit Swap:\t\t " << std::hex << msg << '\n';
+    std::cout << "32-bit Swap:\t\t " << std::uppercase << std::hex << msg << '\n';
 
     //Permutação inversa
     msg=permutaInicialInversa(msg);
-    std::cout << "Permutacao Inversa:\t " << std::hex << msg << '\n';
+    std::cout << "Permutacao Inversa:\t " << std::uppercase << std::hex << msg << '\n';
     std::cout << "===========================" << '\n';
 
     return 0;
