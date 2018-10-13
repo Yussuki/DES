@@ -1,219 +1,218 @@
-[INICIO]
-Mensagem Original: 696e74726f647563
-Chave Original: 3132333435363738
-===========================
+		 [INICIO]
+Mensagem Original:  696e74726f647563
 Permutacao Inicial: ff4c76d100ff139a
+Chave Original:		3132333435363738
+PC1:				fff667880f
 ===========================
-PC1 - Chave: fff667880f
-===========================
-[ROUND 1]
-Chave:
-	Desloc:	 1ffeccf101e
-	PC2:	 502cac572ac2
-Mensagem:
+		 [ROUND 1]
+> Chave:
+	Desloc:		 1ffeccf101e
+	PC2:		 502cac572ac2
+> Mensagem:
 	Orig:		 ff4c76d100ff139a
 	Expan:		 17fe8a7cf4
 	Add Key:	 503b52dd5636
 	S-Box:		 6d829d5d
-	Permuta: 3b58eb38
+	Permutacao:	 3b58eb38
 	Add Left:	 c4149de9
 	Final:		 ff139ac4149de9
 ===========================
-[ROUND 2]
-Chave:
-	Desloc:	 3ffc99e203d
-	PC2:	 50aca450a347
-Mensagem:
+		 [ROUND 2]
+> Chave:
+	Desloc:		 3ffc99e203d
+	PC2:		 50aca450a347
+> Mensagem:
 	Orig:		 ff139ac4149de9
 	Expan:		 e080a94fbf53
 	Add Key:	 b02c0d1f1c14
 	S-Box:		 21b0cba3
-	Permuta: 15266f05
+	Permutacao:	 15266f05
 	Add Left:	 15d97c9f
 	Final:		 c4149de915d97c9f
 ===========================
-[ROUND 3]
-Chave:
-	Desloc:	 fff067880f6
-	PC2:	 d0ac26f6848c
-Mensagem:
+		 [ROUND 3]
+> Chave:
+	Desloc:		 fff067880f6
+	PC2:		 d0ac26f6848c
+> Mensagem:
 	Orig:		 c4149de915d97c9f
 	Expan:		 8abef2bf94fe
 	Add Key:	 5a12d4491072
 	S-Box:		 cd4856d6
-	Permuta: 22bfc079
+	Permutacao:	 22bfc079
 	Add Left:	 e6ab5d90
 	Final:		 15d97c9fe6ab5d90
 ===========================
-[ROUND 4]
-Chave:
-	Desloc:	 3ffc09e203d9
-	PC2:	 e0a6264837cb
-Mensagem:
+		 [ROUND 4]
+> Chave:
+	Desloc:		 3ffc09e203d9
+	PC2:		 e0a6264837cb
+> Mensagem:
 	Orig:		 15d97c9fe6ab5d90
 	Expan:		 70d556afbca1
 	Add Key:	 907370e78b6a
 	S-Box:		 e76fa1ac
-	Permuta: c9c1f6f5
+	Permutacao:	 c9c1f6f5
 	Add Left:	 dc188a6a
 	Final:		 e6ab5d90dc188a6a
 ===========================
-[ROUND 5]
-Chave:
-	Desloc:	 fff007880f66
-	PC2:	 e096263ef029
-Mensagem:
+		 [ROUND 5]
+> Chave:
+	Desloc:		 fff007880f66
+	PC2:		 e096263ef029
+> Mensagem:
 	Orig:		 e6ab5d90dc188a6a
 	Expan:		 6f80f1454355
 	Add Key:	 8f16d77bb37c
 	S-Box:		 cbbc9015
-	Permuta: 6788d964
+	Permutacao:	 6788d964
 	Add Left:	 812384f4
 	Final:		 dc188a6a812384f4
 ===========================
-[ROUND 6]
-Chave:
-	Desloc:	 3ffc00e203d99
-	PC2:	 e09272625d62
-Mensagem:
+		 [ROUND 6]
+> Chave:
+	Desloc:		 3ffc00e203d99
+	PC2:		 e09272625d62
+> Mensagem:
 	Orig:		 dc188a6a812384f4
 	Expan:		 402907c097a9
 	Add Key:	 a0bb75a2cacb
 	S-Box:		 d285ac43
-	Permuta: d192998a
+	Permutacao:	 d192998a
 	Add Left:	 d8a13e0
 	Final:		 812384f40d8a13e0
 ===========================
-[ROUND 7]
-Chave:
-	Desloc:	 fff000880f667
-	PC2:	 a4d2728ca93a
-Mensagem:
+		 [ROUND 7]
+> Chave:
+	Desloc:		 fff000880f667
+	PC2:		 a4d2728ca93a
+> Mensagem:
 	Orig:		 812384f40d8a13e0
 	Expan:		 5bc540a7f00
 	Add Key:	 a16e2686d63a
 	S-Box:		 dd50bf53
-	Permuta: 37bbe89a
+	Permutacao:	 37bbe89a
 	Add Left:	 b6986c6e
 	Final:		 d8a13e0b6986c6e
 ===========================
-[ROUND 8]
-Chave:
-	Desloc:	 3ffc000203d99e
-	PC2:	 a65352e55e50
-Mensagem:
+		 [ROUND 8]
+> Chave:
+	Desloc:		 3ffc000203d99e
+	PC2:		 a65352e55e50
+> Mensagem:
 	Orig:		 d8a13e0b6986c6e
 	Expan:		 5ad4f035835d
 	Add Key:	 fc87a2d0dd0d
 	S-Box:		 d686c967
-	Permuta: 51d6bd32
+	Permutacao:	 51d6bd32
 	Add Left:	 5c5caed2
 	Final:		 b6986c6e5c5caed2
 ===========================
-[ROUND 9]
-Chave:
-	Desloc:	 7ff8000407b33c
-	PC2:	 265353cb9a40
-Mensagem:
+		 [ROUND 9]
+> Chave:
+	Desloc:		 7ff8000407b33c
+	PC2:		 265353cb9a40
+> Mensagem:
 	Orig:		 b6986c6e5c5caed2
 	Expan:		 2f82f955d6a4
 	Add Key:	 9d1aa9e4ce4
 	S-Box:		 4beb7f54
-	Permuta: f27de1ec
+	Permutacao:	 f27de1ec
 	Add Left:	 44e58d82
 	Final:		 5c5caed244e58d82
 ===========================
-[ROUND 10]
-Chave:
-	Desloc:	 ffe000101eccf1
-	PC2:	 2f5151d0c73c
-Mensagem:
+		 [ROUND 10]
+> Chave:
+	Desloc:		 ffe000101eccf1
+	PC2:		 2f5151d0c73c
+> Mensagem:
 	Orig:		 5c5caed244e58d82
 	Expan:		 20970bc5bc04
 	Add Key:	 fc65a157b38
 	S-Box:		 f2cc2e7f
-	Permuta: 5ab39fea
+	Permutacao:	 5ab39fea
 	Add Left:	 6ef3138
 	Final:		 44e58d8206ef3138
 ===========================
-[ROUND 11]
-Chave:
-	Desloc:	 ff8000707b33c4
-	PC2:	 f41d9191e8c
-Mensagem:
+		 [ROUND 11]
+> Chave:
+	Desloc:		 ff8000707b33c4
+	PC2:		 f41d9191e8c
+> Mensagem:
 	Orig:		 44e58d8206ef3138
 	Expan:		 d75e9a29f0
 	Add Key:	 f968783377c
 	S-Box:		 f0454e85
-	Permuta: 90a59a2b
+	Permutacao:	 90a59a2b
 	Add Left:	 d44017a9
 	Final:		 6ef3138d44017a9
 ===========================
-[ROUND 12]
-Chave:
-	Desloc:	 fe0001f1eccf10
-	PC2:	 1f4199d870b1
-Mensagem:
+		 [ROUND 12]
+> Chave:
+	Desloc:		 fe0001f1eccf10
+	PC2:		 1f4199d870b1
+> Mensagem:
 	Orig:		 6ef3138d44017a9
 	Expan:		 ea82000afd53
 	Add Key:	 f5c399d28de2
 	S-Box:		 6551c2fb
-	Permuta: 8f37ce11
+	Permutacao:	 8f37ce11
 	Add Left:	 89d8ff29
 	Final:		 d44017a989d8ff29
 ===========================
-[ROUND 13]
-Chave:
-	Desloc:	 f80007f7b33c40
-	PC2:	 1f0989236a2d
-Mensagem:
+		 [ROUND 13]
+> Chave:
+	Desloc:		 f80007f7b33c40
+	PC2:		 1f0989236a2d
+> Mensagem:
 	Orig:		 d44017a989d8ff29
 	Expan:		 c53ef17fe953
 	Add Key:	 da37785c837e
 	S-Box:		 78f5a918
-	Permuta: 9f09b386
+	Permutacao:	 9f09b386
 	Add Left:	 4b49a42f
 	Final:		 89d8ff294b49a42f
 ===========================
-[ROUND 14]
-Chave:
-	Desloc:	 e0001ffeccf101
-	PC2:	 1b288db23992
-Mensagem:
+		 [ROUND 14]
+> Chave:
+	Desloc:		 e0001ffeccf101
+	PC2:		 1b288db23992
+> Mensagem:
 	Orig:		 89d8ff294b49a42f
 	Expan:		 a56a53d0815e
 	Add Key:	 be42de62b8cc
 	S-Box:		 774fd5bb
-	Permuta: eb47fe5b
+	Permutacao:	 eb47fe5b
 	Add Left:	 629f0172
 	Final:		 4b49a42f629f0172
 ===========================
-[ROUND 15]
-Chave:
-	Desloc:	 80007ffb33c407
-	PC2:	 192c8ca50337
-Mensagem:
+		 [ROUND 15]
+> Chave:
+	Desloc:		 80007ffb33c407
+	PC2:		 192c8ca50337
+> Mensagem:
 	Orig:		 4b49a42f629f0172
 	Expan:		 3054fe802ba4
 	Add Key:	 297872252893
 	S-Box:		 fa114d45
-	Permuta: d49caa2a
+	Permutacao:	 d49caa2a
 	Add Left:	 9fd50e05
 	Final:		 629f01729fd50e05
 ===========================
-[ROUND 16]
-Chave:
-	Desloc:	 fff667880f
-	PC2:	 512c8ca743c0
-Mensagem:
+		 [ROUND 16]
+> Chave:
+	Desloc:		 fff667880f
+	PC2:		 512c8ca743c0
+> Mensagem:
 	Orig:		 629f01729fd50e05
 	Expan:		 cffeaa85c00b
 	Add Key:	 9ed2262283cb
 	S-Box:		 246072a3
-	Permuta: 20270e95
+	Permutacao:	 20270e95
 	Add Left:	 42b80fe7
 	Final:		 9fd50e0542b80fe7
 ===========================
-[FINAL]
-32-bit Swap:	 42b80fe79fd50e05
+		 [FINAL]
+32-bit Swap:		 42b80fe79fd50e05
 Permutacao Inversa:	 a7cdaf9cb01161b1
+===========================
