@@ -102,6 +102,13 @@ unsigned S[64][8] = {
     2, 1, 14, 7, 4, 10, 8, 13, 15, 12, 9, 0, 3, 5, 6, 11
 };
 
+unsigned P[32]={
+    16, 7, 20, 21, 29, 12, 28, 17,
+    1, 15, 23, 26, 5, 18, 31, 10,
+    2, 8, 24, 14, 32, 27, 3, 9,
+    19, 13, 30, 6, 22, 11, 4, 25
+};
+
 //  Função Principal
 int main()
 {
@@ -173,7 +180,7 @@ int main()
         std::cout << "\t" << "S-Box:\t\t " << msgAux << '\n';
         //Permutação
         msgAux=Perm(msgAux);
-        std::cout << "\t" << "Permuta:\t " << msg << '\n';
+        std::cout << "\t" << "Permuta: " << msgAux << '\n';
         //Adição msgL
         msgL=msgL^msgAux;
         std::cout << "\t" << "Add Left:\t " << msg << '\n';
@@ -279,7 +286,11 @@ uint32_t Sbox(uint64_t msg){
 }
 
 uint32_t Perm(uint32_t msg){
-
+    uint32_t nova = 0;
+    for (int i = 31; i >= 0; i--) {
+        nova += nEsimoBit(msg, (32-P[i])) << 31-i;
+    }
+    return nova;
 }
 
 uint64_t permutaInicialInversa(uint64_t msg){
