@@ -67,7 +67,7 @@ unsigned E[48]={
     28, 29, 30, 31, 32, 1
 };
 
-unsigned S[64][8] = {
+unsigned S[8][64] = {
     14, 4, 13, 1, 2, 15, 11, 8, 3, 10, 6, 12, 5, 9, 0, 7,
     0, 15, 7, 4, 14, 2, 13, 1, 10, 6, 12, 11, 9, 5, 3, 8,
     4, 1, 14, 8, 13, 6, 2, 11, 15, 12, 9, 7, 3, 10, 5, 0,
@@ -129,6 +129,7 @@ int main()
     std::cin >> std::hex >> msg;
     //Recebendo Chave
     std::cin >> std::hex >> chave;
+    msg=Sbox(msg);
     std::cout << "Mensagem Original: "<< std::hex << msg << '\n';
     std::cout << "Chave Original: "<< std::hex << chave << '\n';
     std::cout << "===========================" << '\n';
@@ -274,20 +275,20 @@ uint32_t Sbox(uint64_t msg){
     int auxiliar;
     uint32_t nova = 0;
     std::cout << "\tAntes: " << msg << "\n";
-    for(int i = 0; i < 8; i++)
+    for(int i = 8; i >= 0; i--)
     {
         uint64_t linha = 0, coluna = 0;
 
         //pegando primeiro e ultimo bit dos 6 bits e definindo a linha da sBox
-        linha = (nEsimoBit(msg, (48 - i*6)) << 1) + nEsimoBit(msg, (48 - (i*6 + 5)));
+        linha = (nEsimoBit(msg, (47 - i*6)) << 1) + nEsimoBit(msg, (47 - (i*6 + 5)));
 
         //pegando os 4 do meio e definindo a coluna
-        coluna = (nEsimoBit(msg, (48 - (i*6 + 2))) << 3) + (nEsimoBit(msg, (48 - (i*6 + 3))) << 2) + (nEsimoBit(msg, (48 - (i*6 + 4))) << 1) + nEsimoBit(msg, (48 - (i*6 + 5)));
-
-        nova += ((S[linha*16 + coluna][i]) << (28 - 4*i));
+        coluna = (nEsimoBit(msg, (47 - (i*6 + 1))) << 3) + (nEsimoBit(msg, (47 - (i*6 + 2))) << 2) + (nEsimoBit(msg, (47 - (i*6 + 3))) << 1) + nEsimoBit(msg, (47 - (i*6 + 4)));
+        //std::cout << "S[" << linha*16 + coluna << "]" << '\n';
+        nova += ((S[i][linha*16 + coluna]) << (28 - 4*i));
         std::cout << "Linha: " << linha << "\n";
-        std::cout << "Coluna: " << coluna << "\tbin:" << nEsimoBit(msg, (48 - (i*6 + 2))) << nEsimoBit(msg, (48 - (i*6 + 3))) << nEsimoBit(msg, (48 - (i*6 + 4))) << nEsimoBit(msg, (48 - (i*6 + 5))) << "\n";
-        std::cout << "S-Box[" << i <<  "] = " << ((S[linha*16 + coluna][i]) << (28 - 4*i)) << "\n";
+        std::cout << "Coluna: " << coluna << "\n";
+        std::cout << "S-Box[" << i <<  "] = " << ((S[i][linha*16 + coluna]) << (28 - 4*i)) << "\n";
     }
     return nova;
 }
